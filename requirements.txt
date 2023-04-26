@@ -1,12 +1,7 @@
 pandas
-streamlit 
 matplotlib
-plotly.express
+plotly
 datetime
 pytz
-et_localzone
 io
 pillow
-random
-os
-plotly.graph_objects 
