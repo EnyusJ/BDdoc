@@ -1,0 +1,5 @@
+users:
+  - username: benutzer1
+    password_hash: passwort_hash1
+  - username: benutzer2
+    password_hash: passwort_hash2
