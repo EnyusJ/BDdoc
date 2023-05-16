@@ -8,7 +8,6 @@ Created on Fri Apr  7 15:24:04 2023
 import json
 import pandas as pd
 import streamlit as st
-import matplotlib.pyplot as plt
 import plotly.express as px
 import datetime as dt
 import pytz
@@ -18,6 +17,7 @@ from PIL import Image
 import random
 import os
 import plotly.graph_objects as go
+
 
 
 # Setzen des Titels und Untertitels
@@ -315,8 +315,9 @@ st.table(df)
 
 if st.button('Daten speichern', key=str(dt.datetime.now())):
     
+
 # Termin-Daten im JSON-Format speichern
-    if st.button('Daten speichern'):
+  if st.button('Daten speichern'):
     # Die Daten in ein Dictionary umwandeln
     data = df.to_dict(orient='records')
     
