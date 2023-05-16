@@ -302,7 +302,7 @@ if st.button('Medikament hinzufügen'):
 
 # Tabelle mit den Medikamenten anzeigen
 for i, row in df.iterrows():
-    if st.checkbox(row['Medikament'] + ' um ' + row['Uhrzeit'].strftime('%H:%M') + ' Uhr eingenommen?'):
+    if st.checkbox(f"{row['Medikament']} um {row['Uhrzeit'].strftime('%H:%M')} Uhr eingenommen?"):
         df.at[i, 'Eingenommen'] = True
 st.table(df)
 
