@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Apr  7 15:24:04 2023
-
-@author: Melanie
-"""
-
 import json
 import pandas as pd
 import streamlit as st
@@ -314,9 +307,6 @@ for i, row in df.iterrows():
 st.table(df)
 
 if st.button('Daten speichern', key=str(dt.datetime.now())):
-    # Füge hier den Code hinzu, um die Daten zu speichern
-    pass  # Platzhalter für den eigentlichen Code zum Speichern der Daten
-
     
 
 # Termin-Daten im JSON-Format speichern
